@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-touch-fullscreen" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title></title>
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/stylesheets/app.min.css">
+    <!-- endinject -->
+</head>
+<body>
+
+<!-- header -->
+<header class="header">
+    <div class="header-bd">
+        <!-- logo -->
+        <a class="logo" href="">工作管理平台</a>
+        <!-- end logo -->
+
+        <!-- nav -->
+        <nav class="nav">
+            <a href="calendar.html" class="active">我的思烁</a>
+            <a href="calendar-editing.html">工作任务</a>
+            <a href="user.html">团队成员</a>
+        </nav>
+        <!-- end nav -->
+
+        <!-- search -->
+        <div class="search">
+            <button class="search-btn"></button>
+        </div>
+        <!-- end search -->
+
+        <!-- user -->
+        <div class="user">
+            <div class="user-signed">
+                <a href=""><span>春天大鸽子</span></a>
+            </div>
+        </div>
+        <!-- end user -->
+    </div>
+</header>
+<!-- end header -->
+
+<!-- calendar -->
+<div class="calendar calendar-editor">
+    <div class="calendar-hd">
+        <!-- datepicker -->
+        <div class="datepicker">
+            <i class="prev"></i>
+            <span class="date">2015年&nbsp;09月</span>
+            <i class="next"></i>
+        </div>
+        <!-- end datepicker -->
+
+        <button class="btn create">创建项目</button>
+        <h1 class="title">工作日历</h1>
+    </div>
+
+    <div class="calendar-bd">
+        <!-- calendar row -->
+        <div class="calendar-row">
+            <div class="calendar-item-wrap">
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+            </div>
+
+            <div class="calendar-task-placeholder" data-task-amount="2"></div>
+
+            <div class="task-item-wrap">
+                <div class="task finished" data-column="3">
+                    <div class="task-wrap">
+                        <div class="task-hd">腾讯QQ浏览器DNF专题设计 <button class="icon-edite">edit</button></div>
+                        <div class="task-ft">
+                            <table class="bd">
+                                <tr>
+                                    <td>
+                                        <p><span class="txt">初稿</span> <a class="icon-jpg" href="javascript:;"></a></p>
+                                    </td>
+                                    <td>
+                                        <p><span class="txt">二稿</span> <a class="icon-jpg" href="javascript:;"></a></p>
+                                    </td>
+                                    <td>
+                                        <p><span class="txt">终稿</span> <a class="icon-jpg" href="javascript:;"></a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task" data-column="2" data-row="1" data-offset="4">
+                    <div class="task-wrap">
+                        <div class="task-hd" style="background: #e03232;">腾讯御龙在天专题设计 <button class="icon-edite">edit</button></div>
+                        <div class="task-ft">
+                            <table class="bd">
+                                <tr>
+                                    <td>
+                                        <p><span class="txt">标注色值，字体大小和间距</span></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task" data-column="5" data-row="2" data-offset="5">
+                    <div class="task-wrap">
+                        <div class="task-hd" style="background: #9e360e;">时云RySmart app 一期UI切图 <button class="icon-edite">edit</button></div>
+                        <div class="task-ft">
+                            <table class="bd">
+                                <tr>
+                                    <td>
+                                        <p><span class="txt">切控件</span></p>
+                                    </td>
+                                    <td data-column="2">
+                                        <p><span class="txt">输出3种尺寸png格式文件</span></p>
+                                    </td>
+                                    <td data-column="2">
+                                        <p><span class="txt">标注色值，字体大小和间距</span></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end calendar row -->
+
+        <!-- calendar row -->
+        <div class="calendar-row">
+            <div class="calendar-item-wrap">
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+            </div>
+
+            <div class="calendar-task-placeholder" data-task-amount="2"></div>
+
+            <div class="task-item-wrap">
+                <div class="task finished" data-column="3">
+                    <div class="task-wrap">
+                        <div class="task-hd">腾讯QQ浏览器DNF专题设计 <button class="icon-edite">edit</button></div>
+                        <div class="task-ft">
+                            <table class="bd">
+                                <tr>
+                                    <td>
+                                        <p><span class="txt">初稿</span> <a class="icon-jpg" href="javascript:;"></a></p>
+                                    </td>
+                                    <td>
+                                        <p><span class="txt">二稿</span> <a class="icon-jpg" href="javascript:;"></a></p>
+                                    </td>
+                                    <td>
+                                        <p><span class="txt">终稿</span> <a class="icon-jpg" href="javascript:;"></a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task" data-column="2" data-row="1" data-offset="4">
+                    <div class="task-wrap">
+                        <div class="task-hd" style="background: #e03232;">腾讯御龙在天专题设计 <button class="icon-edite">edit</button></div>
+                        <div class="task-ft">
+                            <table class="bd">
+                                <tr>
+                                    <td>
+                                        <p><span class="txt">标注色值，字体大小和间距</span></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task" data-column="5" data-row="2" data-offset="5">
+                    <div class="task-wrap">
+                        <div class="task-hd" style="background: #9e360e;">时云RySmart app 一期UI切图 <button class="icon-edite">edit</button></div>
+                        <div class="task-ft">
+                            <table class="bd">
+                                <tr>
+                                    <td>
+                                        <p><span class="txt">切控件</span></p>
+                                    </td>
+                                    <td data-column="2">
+                                        <p><span class="txt">输出3种尺寸png格式文件</span></p>
+                                    </td>
+                                    <td data-column="2">
+                                        <p><span class="txt">标注色值，字体大小和间距</span></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end calendar row -->
+
+        <!-- calendar row -->
+        <div class="calendar-row">
+            <div class="calendar-item-wrap">
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="hd">周一</div>
+                    <div class="bd">1</div>
+                </div>
+            </div>
+
+            <div class="calendar-task-placeholder" data-task-amount="2"></div>
+
+            <div class="task-item-wrap">
+                <div class="task finished" data-column="3">
+                    <div class="task-wrap">
+                        <div class="task-hd">腾讯QQ浏览器DNF专题设计 <button class="icon-edite">edit</button></div>
+                        <div class="task-ft">
+                            <table class="bd">
+                                <tr>
+                                    <td>
+                                        <p><span class="txt">初稿</span> <a class="icon-jpg" href="javascript:;"></a></p>
+                                    </td>
+                                    <td>
+                                        <p><span class="txt">二稿</span> <a class="icon-jpg" href="javascript:;"></a></p>
+                                    </td>
+                                    <td>
+                                        <p><span class="txt">终稿</span> <a class="icon-jpg" href="javascript:;"></a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task" data-column="2" data-row="1" data-offset="4">
+                    <div class="task-wrap">
+                        <div class="task-hd" style="background: #e03232;">腾讯御龙在天专题设计 <button class="icon-edite">edit</button></div>
+                        <div class="task-ft">
+                            <table class="bd">
+                                <tr>
+                                    <td>
+                                        <p><span class="txt">标注色值，字体大小和间距</span></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task" data-column="5" data-row="2" data-offset="5">
+                    <div class="task-wrap">
+                        <div class="task-hd" style="background: #9e360e;">时云RySmart app 一期UI切图 <button class="icon-edite">edit</button></div>
+                        <div class="task-ft">
+                            <table class="bd">
+                                <tr>
+                                    <td>
+                                        <p><span class="txt">切控件</span></p>
+                                    </td>
+                                    <td data-column="2">
+                                        <p><span class="txt">输出3种尺寸png格式文件</span></p>
+                                    </td>
+                                    <td data-column="2">
+                                        <p><span class="txt">标注色值，字体大小和间距</span></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end calendar row -->
+    </div>
+
+    <!-- sidebar -->
+    <aside class="calendar-sidebar">
+        <div class="calendar-sidebar-bd">
+            <h2 class="title">今日工作内容信息</h2>
+            <ol class="todo">
+                <li>腾讯QQ浏览器御龙在天游戏活动专题素材收集、创意思考、页面设计</li>
+                <li>时云切控件</li>
+                <li>腾讯QQ浏览器御龙在天游戏活动专题</li>
+                <li>时云切控件</li>
+            </ol>
+            <div class="done">
+                <h3>未完成事项</h3>
+                <ol>
+                    <li>腾讯QQ浏览器御龙在天游戏活动专题素材收集、创意思考、页面设计</li>
+                    <li>时云切控件</li>
+                    <li>腾讯QQ浏览器御龙在天游戏活动专题</li>
+                    <li>时云切控件</li>
+                </ol>
+            </div>
+
+            <button class="calendar-btn">今<br/>日<br/>信<br/>息</button>
+        </div>
+
+        <div class="calendar-mask"></div>
+    </aside>
+    <!-- end sidebar -->
+
+    <!-- task detail -->
+    <div class="m-float-panel task-detail">
+        <h2>项目详情</h2>
+        <button class="icon-close">close button</button>
+
+        <div class="row">
+            <p class="title"><strong>名称：</strong></p>
+            <p class="desc">腾讯御龙在天专题</p>
+        </div>
+        <div class="row">
+            <p class="title"><strong>描述：</strong></p>
+            <div class="desc">
+                <p>腾讯御龙在天游戏公测2周年，QQ浏览器专属国庆福利，活动专题页面设计项目</p>
+                <p>腾讯御龙在天游戏公测2周年，QQ浏览器专属国庆福利，活动专题页面设计项目</p>
+                <p>腾讯御龙在天游戏公测2周年，QQ浏览器专属国庆福利，活动专题页面设计项目</p>
+            </div>
+        </div>
+        <div class="row">
+            <p class="title"><strong>期限：</strong></p>
+            <p class="desc">9月3日 —— 9月4日</p>
+        </div>
+        <div class="row">
+            <p class="title"><strong>汇报对象：</strong></p>
+            <p class="desc">大仲</p>
+        </div>
+        <div class="row">
+            <p class="title"><strong>子任务：</strong></p>
+            <p class="desc">页面设计 9月3日<span>&nbsp;&nbsp;</span>页面切图 9月4日</p>
+        </div>
+    </div>
+    <!-- end task detail -->
+
+    <!-- task editor  -->
+    <div class="m-float-panel task-editor">
+        <h2>创建项目</h2>
+        <button class="icon-close">close button</button>
+
+        <div class="row">
+            <p class="title"><strong>名称：</strong></p>
+            <div class="desc">
+                <input type="text" class="input input-block"/>
+            </div>
+        </div>
+
+        <div class="row">
+            <p class="title"><strong>描述：</strong></p>
+            <div class="desc">
+                <textarea type="text" class="textarea"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <p class="title"><strong>期限：</strong></p>
+            <div class="desc">
+                <input type="text" class="input input-block input-date" readonly />
+                <button class="datepicker datepicker-inline">datepicker</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <p class="title"><strong>汇报对象：</strong></p>
+            <div class="desc">
+                <div class="checkbox-group">
+                    <div class="checkbox-group-item">
+                        <label class="name">
+                            <input type="checkbox" name=""/>
+                            <span>吴仲钦</span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group-item">
+                        <label class="name">
+                            <input type="checkbox" name=""/>
+                            <span>郑留根</span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group-item">
+                        <label class="name">
+                            <input type="checkbox" name=""/>
+                            <span>张斌</span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group-item">
+                        <label class="name">
+                            <input type="checkbox" name=""/>
+                            <span>大卫</span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group-item">
+                        <label class="name">
+                            <input type="checkbox" name=""/>
+                            <span>张李振</span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group-item">
+                        <label class="name">
+                            <input type="checkbox" name=""/>
+                            <span>彭贺</span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group-item">
+                        <label class="name">
+                            <input type="checkbox" name=""/>
+                            <span>小新</span>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group-item">
+                        <label class="name">
+                            <input type="checkbox" name=""/>
+                            <span>鸽子</span>
+                        </label>
+                    </div>
+                </div>
+                <button class="more">更多</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <p class="title"><strong>子任务：</strong></p>
+            <div class="desc subtitle-list">
+                <div class="subtitle-list-item">
+                    <input type="text" class="input input-date" readonly />
+                    <span class="subtitle">子任务期限：</span>
+                    <input type="text" class="input input-date" readonly />
+                    <button class="datepicker">datepicker</button>
+
+                    <button class="btn upload-image active">上传图片</button>
+                    <a class="img-preview active" href=""><img src="assets/images/icon-jpg.jpg" alt="" width="31"/></a>
+                </div>
+
+                <div class="subtitle-list-item">
+                    <input type="text" class="input input-date" readonly />
+                    <span class="subtitle">子任务期限：</span>
+                    <input type="text" class="input input-date" readonly />
+                    <button class="datepicker">datepicker</button>
+
+                    <button class="btn upload-image active">上传图片</button>
+                    <a class="img-preview active" href=""><img src="assets/images/icon-jpg.jpg" alt="" width="31"/></a>
+                </div>
+
+                <div class="subtitle-list-item">
+                    <input type="text" class="input input-date" readonly />
+                    <span class="subtitle">子任务期限：</span>
+                    <input type="text" class="input input-date" readonly />
+                    <button class="datepicker">datepicker</button>
+
+                    <button class="btn upload-image active">上传图片</button>
+                    <a class="img-preview" href=""><img src="assets/images/icon-jpg.jpg" alt="" width="31"/></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="btn btn-gray btn-reset">内容重置</button>
+            <button class="btn btn-dark btn-confirm">确认提交</button>
+        </div>
+    </div>
+    <!-- end task editor  -->
+
+    <!-- task preview  -->
+    <div class="m-float-panel task-preview">
+        <img src="assets/images/test-psd.jpg" alt=""/>
+    </div>
+    <!-- end task preview  -->
+
+    <!-- operate mask -->
+    <div class="operate-mask"></div>
+    <!-- end operate mask -->
+</div>
+<!-- end calendar -->
+
+<!-- footer -->
+<footer class="footer">
+    <p class="copyright">© 2015 siso brand.com</p>
+    <p class="copyright-text">Lorem ispum. Proin at eros non eros adipiscing mollis. Donec ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque.<br /> Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor.</p>
+</footer>
+<!-- footer -->
+
+<!-- inject:js -->
+<script src="assets/scripts/app.min.js"></script>
+<!-- endinject -->
+</body>
+</html>

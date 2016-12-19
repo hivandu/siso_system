@@ -1,0 +1,181 @@
+// Created by Hivan Du 2015(Siso brand interactive team).
+@import "color";
+@import "base";
+
+/*======================================================================
+      Global
+  ======================================================================*/
+* { box-sizing: border-box; outline: none; }
+
+html {
+  height: 100%;
+  font-family: "microsoft yahei", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  height: 100%;
+  margin: 0  auto;
+  font-size: 14px;
+  color: $color-normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+p, a, button, span {
+  -webkit-font-smoothing: antialiased;
+}
+
+input {
+  outline: none;
+}
+
+h1 { font-size: 22px; }
+
+.clearfix:after {
+  content: "";
+  display:table;
+  clear:both;
+}
+
+// header
+.header {
+  background: url("../images/bg-header.png") repeat-x;
+}
+
+.header-bd {
+  $header-height: 55px;
+  min-width: 1000px;
+  height: $header-height;
+  font-size: 14px;
+  @include clearfix();
+
+  @mixin border-left() {
+    border-left: 1px solid #2a2a2a;
+  }
+
+  @mixin border-right() {
+    border-left: 1px solid #3d3d3d;
+  }
+
+  a { color: #fff; }
+
+  .logo {
+    overflow: hidden;
+    float: left;
+    width: 162px;
+    height: $header-height;
+    margin: 0 75px 0 35px;
+    text-indent: -100%;
+    vertical-align: top;
+    background: url("../images/header-logo.png") no-repeat;
+  }
+
+  .nav {
+    float: left;
+    @include border-left();
+    @include border-right();
+    @include clearfix();
+
+    a {
+      float: left;
+      width: 122px;
+      height: $header-height;
+      line-height: $header-height;
+      text-align: center;
+      @include border-left();
+      @include border-right();
+
+      &:hover, &.active {
+        background: url("../images/bg-header-nav-active.png") repeat-x;
+      }
+    }
+  }
+
+  .search {
+    float: right;
+    text-align: center;
+    @include border-left();
+  }
+
+  .search-btn {
+    display: block;
+    width: 75px;
+    height: $header-height;
+    border:none;
+    background: url("../images/icon-search.png") no-repeat center center;
+    @include border-right();
+  }
+
+  .user {
+    float: right;
+    @include border-left();
+  }
+
+  .user-signed {
+    a {
+      display: block;
+      width: 148px;
+      line-height: $header-height;
+      text-align: center;
+      @include border-right();
+
+      span {
+        display: inline-block;
+        height: $header-height;
+        padding: 0 20px 0 0;
+        background: url("../images/icon-header-down.png") no-repeat right center;
+
+      }
+    }
+  }
+}
+
+// footer
+.footer {
+  margin-top: 26px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 12px;
+
+  .copyright {
+    margin: 4px 0;
+    color: rgba(0,0,0,.6);
+  }
+
+  .copyright-text {
+    color: #bcbcbc;
+  }
+}
+
+// operate mask
+.operate-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  background: rgba(0,0,0,.3);
+  transform: translate3d(-100%, 0, 0);
+  transition: opacity .6s;
+
+  // status
+  &.active {
+    z-index: 100;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/*======================================================================
+      Responsive
+  ======================================================================*/
+@media screen and (max-width: 1215px) {
+
+}

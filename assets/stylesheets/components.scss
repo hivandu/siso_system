@@ -1,0 +1,100 @@
+// Created by Hivan Du 2015(Siso brand interactive team).
+@import "color";
+@import "base";
+
+
+/*======================================================================
+      Components
+  ======================================================================*/
+//  float-panel
+.m-float-panel {
+  display: none;
+  width: 855px;
+  padding: 15px 20px;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  z-index: 1100;
+  margin-bottom: 65px;
+  transform: translate3d(-50%,0,0);
+  background: #fff;
+  box-shadow: 2px 2px 18px rgba(0,0,0,.18);
+
+  .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: url("../images/icon-close.png") no-repeat center center;
+    border: none;
+    overflow: hidden;
+    text-indent: -200px;
+    outline: none;
+  }
+
+  .icon-close:hover {
+    transform: scale(1.3);
+  }
+
+  .icon-close:active {
+    transform: scale(1.6);
+  }
+
+  //  statues
+  &.active {
+    display: block;
+  }
+}
+
+
+//  button
+.btn {
+  max-width: 130px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: $color-heavy;
+  background: $btn-primary;
+  border: none;
+  outline: none;
+}
+
+
+//  input
+.input {
+  display: inline-block;
+  width: 145px;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 10px;
+  margin-top: 5px;
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+}
+
+.input-block {
+  width: 100%;
+}
+
+//  textarea
+.textarea {
+  display: block;
+  width: 100%;
+  height: 100px;
+  line-height: 1.2em;
+  padding: 10px;
+  margin-top: 5px;
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  resize: none;
+  outline: none;
+}
+
+/*======================================================================
+      Responsive
+  ======================================================================*/
+@media screen and (max-width: 1215px) {
+
+}
